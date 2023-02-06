@@ -21,15 +21,19 @@ bind 0.0.0.0
 port ${KEYDB_PORT}
 supervised systemd
 dir ${WDR}/data/
-storage-provider flash ${WDR}/flash/
+
+# Disable storage provider for memory testing
+# storage-provider flash ${WDR}/flash/
 
 cluster-enabled no
 replica-serve-stale-data yes
-repl-diskless-sync yes
+
+# Diskless replication is EXPERIMENTAL
+repl-diskless-sync no
 
 # memory
 maxmemory 40gb
 maxmemory-policy allkeys-lru
 
-server-threads 7
+server-threads 4
 EOF
