@@ -10,6 +10,8 @@ bash install/nginx.sh
 bash install/go.sh
 bash install/memtier_benchmark.sh
 bash install/redis.sh
+bash install/keydb.sh
+bash install/redis_exporter.sh
 
 echo "setup grafana ..."
 curl --user admin:admin 'http://localhost:3000/api/datasources' \
