@@ -40,7 +40,7 @@ scrape_configs:
       - targets: ['localhost:9090']
 
   ## config for scraping the exporter itself
-  - job_name: 'kvrocks_exporter'
+  - job_name: 'redis_exporter'
     static_configs:
       - targets: [${SERVERS:1}]
 

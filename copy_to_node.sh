@@ -17,5 +17,5 @@ for ip in ${HOSTS_PRIVATE[@]}; do
     upload $ip install
     upload $ip tools
     upload $ip cluster
-    upload $ip kvrocks_exporter/kvrocks_exporter
+    upload $ip redis_exporter/redis_exporter
 done
