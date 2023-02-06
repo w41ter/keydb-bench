@@ -91,7 +91,7 @@ setsid /root/redis_exporter >/var/log/redis-exporter.log 2>&1 &
 
 cd ${WDR}
 mkdir -p ${WDR}/log/
-exec ${WDR}/bin/keydb ${WDR}/keydb.conf >${WDR}/stdout 2>&1
+exec ${WDR}/bin/keydb-server ${WDR}/keydb.conf >${WDR}/stdout 2>&1
 
 EOF
     chmod +x ${WDR}/scripts/run.sh
