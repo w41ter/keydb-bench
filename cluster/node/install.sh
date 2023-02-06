@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script will install kvrocks binaries and config files.
+# This script will install keydb binaries and config files.
 source config.sh
 source cluster/config.sh
 
