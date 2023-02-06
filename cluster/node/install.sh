@@ -91,6 +91,8 @@ setsid /root/redis_exporter >/var/log/redis-exporter.log 2>&1 &
 
 cd ${WDR}
 mkdir -p ${WDR}/log/
+mkdir -p ${WDR}/data/
+mkdir -p ${WDR}/flash/
 exec ${WDR}/bin/keydb-server ${WDR}/keydb.conf >${WDR}/stdout 2>&1
 
 EOF
